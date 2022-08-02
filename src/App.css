@@ -1,38 +1,215 @@
-.App {
+.forecast {
+  background-color: #e9f6fe;
+  width: 70px;
+  float: left;
+  margin: 0 10px;
+
+padding: 6px;  border-radius: 30px 30px 30px 30px;
+}
+.hour-img {
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  margin: auto;
+}
+
+.hour-img img {
+  width: 100%;
+}
+p.user {
+  padding: 0 5px;
+}
+.forcast-header {
+  float: left;
+  width: 80%;
+  display: flex;
+  overflow-x: scroll;
+} 
+.tab-in-day {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+}
+form.search-input {
+
+  width: fit-content;
+  position: relative;
+}
+
+
+form.search-input input {
+  padding: 10px 40px 10px 10px;
+  border-radius: 5px;
+  width: 100px;
+  transition: 0.9s all;
+  border: unset;
+}
+
+form.search-input button {
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  padding: 2px;
+  border: unset;
+  background-color: transparent;
+}
+form.search-input input:hover,form.search-input input:focus {
+  width: 200px;
+  box-shadow: -2px 3px 11px 10px #49304775;
+ 
+}
+form.search-input input:focus-visible{
+  outline: unset;
+}
+.submit img{
+  width: 100%;
+}
+.sunney{
+  background-image: url(./component/assets/images/bg.png);
+  height: 100vh;
+  overflow-y: scroll;
+  /* background-attachment: fixed; */
+  /* background-color: aquamarine; */
+  background-position: bottom;
+}
+
+
+.cloudy{
+  background-image: url(./component/assets/images/Clody.png);
+  height: 100vh;
+  overflow-y: scroll;
+  /* background-attachment: fixed; */
+  /* background-color: aquamarine; */
+  background-position: bottom;
+}
+.forcast-header::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+/* Track */
+
+ 
+/* Handle */
+.forcast-header::-webkit-scrollbar-thumb {
+  background: rgba(0, 204, 255, 0.199); 
+  border-radius: 2px;
+}
+h1 {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tab-in-day p {
+ 
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
+.tab-in-day p.active {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* margin: 0; */
+  background-color: #0016ff6b;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.header-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card-section {
+  text-align: left;
+  width: 500px;
+  margin: auto;
+}
+.card-section h1:first-child {
+  font-size: 60px;
+  margin-bottom: 0%;
+}
+.icons {
+  margin: auto;
+  width: 105px;
+}
+.windIcon {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wind {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.36);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 30px 30px 40px -10px rgb(0 0 0 / 15%);
+    height: 75px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.windIcon img {
+  width: 58px;
+}
+.windIcon p{
+  margin: 0;
+  margin-bottom: 30px;
+}
+.weatherText {
+  text-align: center;
+  font-size: 25px;
+}
+.riseSet img {
+  width: 40px;
+}
+.riseSet p{
+  margin: 0;
+}
+.riseSet {
+  float: left;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+    background: rgba(255, 255, 255, 0.36);
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 30px 30px 40px -10px rgb(0 0 0 / 15%);
+
+  margin: 10px;
+}
+.riseSet p {
+  font-size: 20px;
+}
+.riseicon {
+  display: flex;
+  align-items: center;
+}
+.riseicon img {
+  padding-right: 10px;
+}
+.sunSet{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  float: left;
+  flex-wrap: wrap;
+}
+.cardSection {
+  width: 550px;
+  margin: auto;
+  background-color: #ffffff87;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 1px 10px 10px 10px #81abc24d;
+}
+.forecast-header {
+  float: left;
+  /* width: 80%; */
+  /* margin: auto; */
+  display: grid;
+  place-items: center;
 }
